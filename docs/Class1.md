@@ -6,8 +6,7 @@
 
 ### First steps: <br>Download and install the Arduino IDE and S4A (Scratch for Arduino) IDE using the following links
 
-Notes:
-The security settings on OS/X must be set to allow all applications to run or OS/X may throw up a dialog claiming the Arduino IDE and/or mBlock is a damaged application erroneously.
+##### Notes: The security settings on OS/X must be set to allow all applications to run or OS/X may throw up a dialog claiming the Arduino IDE and/or S4A is a damaged application erroneously.
 ![](images/ArduinoIDEDownload.png)
 ![](images/S4ADownload.png)
 # Download S4A firmware for the Arduino Mega 2560 board
@@ -38,6 +37,12 @@ The security settings on OS/X must be set to allow all applications to run or OS
 ![](images/Mega2560Board.png)
 # Launch the S4A application and create the blink program
 ### when S4A first launches while the Mega 2560 is plugged into your Mac, it will display a dialog box "searching for board" and then the Analog values will start updating. Create the Blink program as described below.
+
+##### The first time you launch S4A and other apps like the Arduino IDE and mBlock. you will likely have to go into yoru Mac's Security and Privacy settings dialog and launch it using the "Open Anyway" button
+![](images/SecurityAndPrivacyDialog.png)
+![](images/openApplicationDialog.png)
+
+
 ![](images/S4ABlinkProgram.png)
 ### Simple LED blink program written in drag-and-drop Scratch code on S4A
 
