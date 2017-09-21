@@ -12,7 +12,6 @@
 
 ### Launch the S4A application and create the the program using Scratch drag-and-drop programming as depicted below. Be sure to select the correct pin number for each digital or analog device. Due to limitations of S4A this project uses the digital PWM pin 6, which is called an analog device, and sets it to full on with a PWM value of 255, or full off with a PWM value of 0.
 ### Pulse Width Modulation (PWM) uses 10,000 cycles or more per second of variable length pulses that when aggregated (think calculus integrals), can vary the aggregate power supplied to an LED or other device creating the effect of dimming an LED, or slowing a DC motor. In our next project we will use the PWM capability to make an LED slowly glow brighter and dimmer in a slow cycle. Press the flag icon to run the Scratch program.
-
 ![](images/S4ATrafficSimple.png)
 
 ### Now that you've coded the basic 3 light cycles of a traffic light, lets add a pedestrian cross walk touch button code. Replace the "wait 5 secs" block with a "reset timer" and "wait until" block with the condition being a "greater than" comparison block with "timer" on the left and the number 5 on the right. This is the equivalent of a "wait 5" block, but allows us to add more conditions to the delay. Test that it works then add an "or" block and a "sensor Digital2 pressed?" block. Press the green flag to run the Scratch program and then try touching the pedestrian button at various moments.
