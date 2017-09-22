@@ -1,8 +1,12 @@
 # Devices and IOT Class 2
 
 ---
-### Create a traffic light controller with pedestrian cross walk touch button using Scratch for Arduino <br>Download and install mBlock IDE. <br>Use the mBlock IDE to create an Arduino native C program that slowly increases and decreases the brightness of an LED and allows a touch button to interrupt the cycle.<br>Modify the LED slow blink program to recreate the Traffic Light Controller with Pedestrian Touch Button using mBlock to create a stand alone version which reports the cycle timing on its serial port.
+## Objectives
+- **Create a traffic light controller with pedestrian cross walk touch button using Scratch for Arduino**
+- **Download and install mBlock IDE. <br>Use the mBlock IDE to create an Arduino native C program that slowly increases and decreases the brightness of an LED and allows a touch button to interrupt the cycle**
+- **Modify the LED slow blink program to recreate the Traffic Light Controller with Pedestrian Touch Button using mBlock to create a stand alone version which reports the cycle timing on its serial port**
 
+---
 # Traffic Light Controller
 
 ### Lets setup the Arduino Mega2560 board with Grove Shield for the traffic light controller with pedestrian crosswalk button project.
@@ -46,6 +50,8 @@
 ### Now switch mBlock into Arduino mode using the Edit menu and then the Arduino Mode selection. This open the C/C++ code output subwindow and close the stage layout subwindow.
 ![](images/mBlockArduinoMode.png)
 ![](images/mBlockArduinoWindow.png)
+---
+# Create Slow Blinking LED with Touch Interruption
 
 ### Create the Scratch code program below to create a slowly brightening and dimming LED with touch interruption of the brightening phase. While dragging and dropping Control, Operators and Robots blocks, you will need to refer to two variables you need to make using the Data&Blocks capabilities. Create two variables, "brightness" and "startTime" so you can use them while customizing other blocks.
 ![](images/mBlockMakeVariable.png)
@@ -58,7 +64,10 @@
 ![](images/mBlockBlinkSelectCCode.png)
 ![](images/mBlockBlinkCCodePasteIntoArduinoIDE.png)
 
-### This is the code that mBlock should create. 
+---
+
+# The code that mBlock creates
+### Spend some time reading this code and study the setup() and loop() blocks. All Arduino Sketches have both a setup and loop block. The setup runs once and the loop is called over and over forever. It is best if your programs run in as short a time as possible in the loop as more advanced IOT boards like the ESP8266 and others perform Internet communication and background tasks outside your loop once your code returns.
 
 ```c
 #include <Arduino.h>
@@ -112,8 +121,11 @@ void _delay(float seconds){
 void _loop(){
 }
 ```
+
+---
+# Create the Traffic Light Controller as a stand-alone
+
 ### Lets modify the SlowBlinkWithTouch Scratch code to function like the traffic light controller code we created with S4A. Before starting to change the program, from mBlocks File menu, select "Save Project As" and choose a new file name like "mBlockTrafficLight". Then from the Arduino IDE, create a new Sketch window to paste the traffic light code into. Notice that the code below uses a new feature of Scratch called "define Subroutine" which writes the "startTime" value to the Arduino Serial Console at the end of each red light transitionto green light. It uses a Baud rate of 115200 in the Arduino Serial Console, so make sure that is set properly. For me, the console read 0.0, 14.0, 28.0 and so on as the light cycled. Touching the pedestrian button will change the timing reported on the serial console. In future coding projects, you will use the serial console for multiple purposes, from debugging a program to having your Arduino program communicate with another computer using the USB serial interface.
 ![](images/mBlockTrafficLightController.png)
 
 ### The final project in the class is a true IOT project where the Arduino Mega 2560 will communicate with the MAC over USB to a Python program acting as a web server, allowing a browser to control the Arduino.
-
