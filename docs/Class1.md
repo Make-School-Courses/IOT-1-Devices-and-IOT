@@ -1,10 +1,14 @@
 # Devices and IOT Class 1
 
 ---
-### Diagram the major components and functions of a range of current consumer and industrial embedded system devices and IOT devices as a group activity.
-### Make an Arduino Mega 2560 blink an LED using the Arduino IDE and mBlock which is a version of MIT Scratch that can generate Arduino code.
+## Objectives
+- **Diagram the major components and functions of a range of current consumer and industrial embedded system devices and IOT devices as a group activity**
+- **Make an Arduino Mega 2560 blink an LED using the Arduino IDE and mBlock which is a version of MIT Scratch that can generate Arduino code**
 
-### First steps: <br>Download and install the Arduino IDE and S4A (Scratch for Arduino) IDE using the following links
+---
+
+# First steps
+### Download and install the Arduino IDE and S4A (Scratch for Arduino) IDE using the following links
 
 ##### Notes: The security settings on OS/X must be set to allow all applications to run or OS/X may throw up a dialog claiming the Arduino IDE and/or S4A is a damaged application erroneously.
 ![](images/ArduinoIDEDownload.png)
